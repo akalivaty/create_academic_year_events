@@ -181,7 +181,7 @@ function convert_month_type(chinese_month) {
  * Get sheet data & create events.
  */
 function push_to_google_calendar() {
-  const calendar = CalendarApp.getCalendarById('gm.nuu.edu.tw_853lo4f1bcijuhk8h1kkcp6128@group.calendar.google.com');
+  const calendar = CalendarApp.getCalendarById('CALENDAR_ID');
   const ss = SpreadsheetApp.getActiveSheet();
   const sheetData = ss.getDataRange().getValues().slice(1);
   const obj_rowData = sheetData.map(arr => {
